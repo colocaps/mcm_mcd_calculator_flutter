@@ -34,6 +34,6 @@ class _ApplicationState extends State<Application> {
   }
 
   Map<String, WidgetBuilder> _generateRoutes() {
-    return {};
+    return {...HomeModule.generateRoutes()};
   }
 }

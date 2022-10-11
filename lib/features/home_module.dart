@@ -1,7 +1,6 @@
 import 'package:core/core.dart';
 import 'package:flutter/material.dart';
-
-import 'home_module/pages/home_page.dart';
+import 'package:multiplos_y_divisores/pages/home_page.dart';
 
 abstract class HomeModule {
   static late final NavigationManager _navigationManager;

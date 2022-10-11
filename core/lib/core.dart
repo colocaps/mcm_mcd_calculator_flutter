@@ -1,5 +1,13 @@
 library core;
 
+export 'package:core/src/widgets/custom_elevated_button.dart'
+    show CustomElevatedButton;
+
+export 'package:core/src/widgets/custom_text_form_field.dart'
+    show CustomTextFormField;
+
+export 'package:core/src/helpers/helper.dart' show Helpers;
+
 export 'package:core/src/integrations/navigation_manager_impl.dart'
     show NavigationManagerImpl;
 

@@ -1,0 +1,8 @@
+{
+  "@@locale": "en",
+  "user_label": "User",
+  "@user_label": {
+    "description": "Hint and label for the sign in form user field"
+  }
+
+}

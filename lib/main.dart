@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:multiplos_y_divisores/features/home_module.dart';
 
 import 'application/application.dart';
 import 'ioc_manager.dart';
@@ -17,4 +18,5 @@ void main() async {
 
 Future<void> _registerDependencies() async {
   IoCManager.registerDependencies();
+  HomeModule.registerDependencies();
 }

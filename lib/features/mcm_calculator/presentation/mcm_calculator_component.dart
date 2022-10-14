@@ -2,12 +2,11 @@ import 'package:core/core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class McmMcdCalculatorComponent extends StatefulWidget {
-  const McmMcdCalculatorComponent({Key? key}) : super(key: key);
+class McmCalculatorComponent extends StatefulWidget {
+  const McmCalculatorComponent({Key? key}) : super(key: key);
 
   @override
-  State<McmMcdCalculatorComponent> createState() =>
-      _McmMcdCalculatorComponentState();
+  State<McmCalculatorComponent> createState() => _McmCalculatorComponentState();
 }
 
 String result = '0';
@@ -19,7 +18,7 @@ final TextEditingController secondNumberController = TextEditingController();
 final FocusNode focusNodeFirst = FocusNode();
 final FocusNode focusNodeSecond = FocusNode();
 
-class _McmMcdCalculatorComponentState extends State<McmMcdCalculatorComponent> {
+class _McmCalculatorComponentState extends State<McmCalculatorComponent> {
   @override
   void initState() {
     firstNumberController.text = initialFirstValue.toString();

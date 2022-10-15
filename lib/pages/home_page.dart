@@ -1,4 +1,6 @@
+import 'package:core/core.dart';
 import 'package:flutter/material.dart';
+import 'package:multiplos_y_divisores/features/home_module/domain/repositories/mcm_calculator_repository.dart';
 import 'package:multiplos_y_divisores/features/home_module/presentation/home_component.dart';
 
 class HomePage extends StatelessWidget {
@@ -6,6 +8,8 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var mcmCalculatorRepository =
+        InjectorContainer.instance.resolve<McmCalculatorRepository>();
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
@@ -19,9 +23,11 @@ class HomePage extends StatelessWidget {
         ),
         // centerTitle: centerTitle,
       ),
-      body: const SafeArea(
+      body: SafeArea(
         child: Center(
-          child: HomeComponent(),
+          child: HomeComponent(
+            mcmCalculatorRepository: mcmCalculatorRepository,
+          ),
         ),
       ),
     );
